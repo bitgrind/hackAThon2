@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hack A Thon!</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <!--begin main template-->
+    <main class="container">
+      <div class="jumbotron">
+        <h1>Welcome To Hack A Thon!</h1>
+      </div>
+      #if($getTeam)
+        #parse( $getTeam )
+        #parse($addMember)
+      #else
+      #end
+      #if($newTeam)
+        #parse( $newTeam )
+        #parse( $teamList )
+      #else
+        #parse( $teamAdd )
+      #end
+    </main>
+    <footer></footer>
+    <!--end main template-->
+  </body>
+</html>

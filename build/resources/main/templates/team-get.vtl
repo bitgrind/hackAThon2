@@ -1,0 +1,13 @@
+<div class="col-md-6">
+  <h1>Team: $gotTeam.getName()</h1>
+  <h3>$newMember.memberName()</h3>
+  #if($gotTeam.getMembers())
+    <h2>Members</h2>
+    #foreach($teamMember in $gotTeam.getMembers())
+      <h3>$teamMember.memberName()</h3>
+      <h3>$gotTeam.getMembersId(0)</h3>
+    #end
+  #else
+    <h2>No Members in Team</h2>
+  #end
+</div>

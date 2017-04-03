@@ -1,0 +1,12 @@
+<div class="col-md-6">
+  #if($teamListing)
+    <h1>Team Listing</h1>
+    <ul>
+      #foreach($team in $teamListing)
+        <li><a href="/$team.getId()">$team.getName()</a></li>
+      #end
+    </ul>
+  #else
+    <h2>No teams</h2>
+  #end
+</div>
