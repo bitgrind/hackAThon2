@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HackMemberTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-04-03T17:36:48" hostname="Epicodus-5A.local" time="0.002">
+<testsuite name="HackMemberTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-04-03T23:40:39" hostname="Epicodus-5A.local" time="0.002">
   <properties/>
   <testcase name="HackMember_MemberGetLanguage_true" classname="HackMemberTest" time="0.001"/>
   <testcase name="HackMember_MemberGetName_true" classname="HackMemberTest" time="0.0"/>
