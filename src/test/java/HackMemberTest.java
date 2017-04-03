@@ -33,5 +33,4 @@ public class HackMemberTest {
     HackMember newMember = new HackMember("Keith", "java");
     assertEquals(1, HackMember.all().size());
   }
-
 }

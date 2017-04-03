@@ -2,28 +2,28 @@
 <html>
   <head>
     <title>Hack A Thon!</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='styles.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' href='css/styles.css'>
   </head>
   <body>
     <!--begin main template-->
+    #parse($header)
     <main class="container">
-      <div class="jumbotron">
-        <h1>Welcome To Hack A Thon!</h1>
-      </div>
-      #if($getTeam)
-        #parse( $getTeam )
-        #parse($addMember)
-      #else
-      #end
-      #if($newTeam)
-        #parse( $newTeam )
-        #parse( $teamList )
-      #else
-        #parse( $teamAdd )
-      #end
+      <section>
+        <p>Welcome to Hack A Thon! This is an oppurtunity to make a function app in a short 48 hour time period. Compile your team and lay down frame work and see if you strike at gold!</p>
+      </section>
+      <section class="row">
+        #parse($teamAdd)
+        #parse($teamList)
+        #parse($newTeam)
+        #if($getTeam)
+          #parse($getTeam)
+          #parse($addMember)
+        #else
+        #end
+      </section>
     </main>
-    <footer></footer>
+    #parse($footer)
     <!--end main template-->
   </body>
 </html>
